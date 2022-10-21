@@ -1,0 +1,19 @@
+
+:root {
+  --cl-blanco: #EEEEEE;
+  --cl-cafe: #D8CBBB;
+  --cl-lila: #BB8FA9;
+  --cl-morado: #560764;
+  --cl-negro: #00000;
+}
+
+*{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  
+}
