@@ -7,17 +7,21 @@ body{
   row-gap: 0.5rem;
 }
 
+/*
 .header{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  flex-basis: auto;
 }
+*/
 
-.header div{
+.header figure{
   display: flex;
   justify-content: center;
 }
 
+/*
 .header .nav-links{
   display: flex;
   justify-content: end;
@@ -26,6 +30,7 @@ body{
 .header .nav-links li{
   display: inline-block;
 }
+*/
 
 .div-body{
   display: flex;
@@ -75,6 +80,7 @@ body{
   display: flex;
   flex: 1;
   flex-direction: column;
+
 }
 
 .contact{
@@ -93,7 +99,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 30px;
 }
 
 #contactame{
@@ -106,3 +112,12 @@ body{
   row-gap: 15px;
 }
 
+.mapa{
+  display: flex;
+  justify-content: center;
+}
+
+.audio{
+  display: flex;
+  justify-content: center;
+}

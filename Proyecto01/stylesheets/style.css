@@ -26,23 +26,33 @@ li{
   list-style-position: inside;
 }
 
+th{
+  color: var(--cl-morado);
+}
+
+td{
+  text-align: initial;
+}
+
 .header{
   background: linear-gradient(to bottom, #D8CBBB 0%, #D8CBBB 63%, white 50%, white 100%);
 }
 
-.header div{
+.header figure{
   width: 100%;
 }
 
-.header div img{
+.header figure img{
   height: 15em;
   width: auto;
   border-radius: 50%;
   border: 5px solid white;
   position: relative;
-  top: 17%;
+  top: 1.5em;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
+/*
 .header .nav-links{
   width: 100%;
   list-style: none;
@@ -50,44 +60,54 @@ li{
 
 .header .nav-links ul{
   position: relative;
-  bottom: 255%;
+  bottom: 205%;
+  right: 2%;
+  background-color: white;
+  border-radius: 30px;
 }
 
 .header .nav-links li{
-  padding: 0 20px;
+  padding: 10px 20px;
+  color: var(--cl-morado);
+  font-weight: bold;
 }
+*/
 
 .header h1{
   width: 100%;
   text-align: center;
   padding-top: 3%;
+  letter-spacing: 2px;
+  position: relative;
+  top: 15px;
 }
 
 .linea{
   border-top: 3px solid #D8CBBB;
   max-width: 85%;
   padding: 0;
-  margin: 20px auto 0 auto;
+  margin: 24px auto 0 auto;
 }
 
 .div{
   margin: 0 auto;
   max-width: 1300px;
-  padding: 40px 20px;
+  padding: 45px 20px;
 }
 
 @media screen and (max-width: 800px){
   .div{
-    padding: 0;
+    padding: 5px;
   }
 
   .header h1{
-    padding-top: 5%;
+    padding-top: 3.5%;
   }
 
   .linea{
-    margin: 10px auto 0 auto;
+    margin: 18px auto 0 auto;
   }
+
 }
 
 .section{
@@ -131,4 +151,18 @@ li{
   color: white;
   background-color: var(--cl-morado);
   font-size: 20px; 
+}
+
+.section-body h4{
+  font-size: 20px;
+  color: var(--cl-morado);
+}
+
+.socialmed i{
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+.socialmed i:hover{
+  transform: scale(1.5);
 }
