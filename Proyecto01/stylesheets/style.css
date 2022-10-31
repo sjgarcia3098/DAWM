@@ -108,6 +108,10 @@ td{
     margin: 18px auto 0 auto;
   }
 
+  .div-contact{
+    transform: scale(1.5);
+  }
+
 }
 
 .section{

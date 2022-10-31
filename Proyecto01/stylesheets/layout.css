@@ -7,30 +7,10 @@ body{
   row-gap: 0.5rem;
 }
 
-/*
-.header{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  flex-basis: auto;
-}
-*/
-
 .header figure{
   display: flex;
   justify-content: center;
 }
-
-/*
-.header .nav-links{
-  display: flex;
-  justify-content: end;
-}
-
-.header .nav-links li{
-  display: inline-block;
-}
-*/
 
 .div-body{
   display: flex;
@@ -65,6 +45,10 @@ body{
 
   .big-column{
     row-gap: 5px;
+  }
+
+  .div-contact h4{
+    display: none;
   }
 
 }
