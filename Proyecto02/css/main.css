@@ -626,7 +626,7 @@ video {
   justify-content: flex-start;
 }
 .justify-between {
-  justify-content: space-between;
+  justify-content: center;
 }
 .font-black {
   font-weight: 900;
@@ -1560,3 +1560,14 @@ footer {
 .filter {
     display: none;
 }
+
+/* navigation */
+.navigation {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+  justify-content: center;
+  gap: 1rem;
+}
+
+

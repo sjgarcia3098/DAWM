@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dashboard - Admin One Tailwind CSS Admin Dashboard</title>
+  <title>Dashboard - Rick and Morty</title>
 
   <!-- Tailwind is included -->
   <link rel="stylesheet" href="css/main.css?v=1628755089081">
@@ -111,70 +111,12 @@
             </a>
           </li>
         </ul>
-        <p class="menu-label">Examples</p>
+        <p class="menu-label">Sections</p>
         <ul class="menu-list">
-          <li class="--set-active-tables-html">
-            <a href="tables.html">
-              <span class="icon"><i class="mdi mdi-table"></i></span>
-              <span class="menu-item-label">Tables</span>
-            </a>
-          </li>
           <li class="--set-active-forms-html">
-            <a href="forms.html">
-              <span class="icon"><i class="mdi mdi-square-edit-outline"></i></span>
-              <span class="menu-item-label">Forms</span>
-            </a>
-          </li>
-          <li class="--set-active-profile-html">
-            <a href="profile.html">
-              <span class="icon"><i class="mdi mdi-account-circle"></i></span>
-              <span class="menu-item-label">Profile</span>
-            </a>
-          </li>
-          <li>
-            <a href="login.html">
-              <span class="icon"><i class="mdi mdi-lock"></i></span>
-              <span class="menu-item-label">Login</span>
-            </a>
-          </li>
-          <li>
-            <a class="dropdown">
-              <span class="icon"><i class="mdi mdi-view-list"></i></span>
-              <span class="menu-item-label">Submenus</span>
-              <span class="icon"><i class="mdi mdi-plus"></i></span>
-            </a>
-            <ul>
-              <li>
-                <a href="#void">
-                  <span>Sub-item One</span>
-                </a>
-              </li>
-              <li>
-                <a href="#void">
-                  <span>Sub-item Two</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <p class="menu-label">About</p>
-        <ul class="menu-list">
-          <li>
-            <a href="https://justboil.me" onclick="alert('Coming soon'); return false" target="_blank" class="has-icon">
-              <span class="icon"><i class="mdi mdi-credit-card-outline"></i></span>
-              <span class="menu-item-label">Premium Demo</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://justboil.me/tailwind-admin-templates" class="has-icon">
-              <span class="icon"><i class="mdi mdi-help-circle"></i></span>
-              <span class="menu-item-label">About</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/justboil/admin-one-tailwind" class="has-icon">
-              <span class="icon"><i class="mdi mdi-github-circle"></i></span>
-              <span class="menu-item-label">GitHub</span>
+            <a href="personajes.html">
+              <span class="icon"><i class="mdi mdi-account-box-multiple"></i></span>
+              <span class="menu-item-label">Personajes</span>
             </a>
           </li>
         </ul>
@@ -587,42 +529,20 @@
     </section>
 
     <footer class="footer">
-      
+      <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
+        <div class="flex items-center justify-start space-x-3">
+          <div>
+            © 2022, RickandMorty_DashBoard
+          </div>
+          <div>
+            <p><span class="text-bolder">Referencias: (</span> Distributed By: <a href="https://themewagon.com/" target="_blank">ThemeWagon</a>)</p>
+          </div>
+          <a href="https://github.com/justboil/admin-one-tailwind" style="height: 20px">
+            <img src="https://img.shields.io/github/v/release/justboil/admin-one-tailwind?color=%23999">
+          </a>
+        </div>
+      </div>
     </footer>
-
-    <div id="sample-modal" class="modal">
-      <div class="modal-background --jb-modal-close"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Sample modal</p>
-        </header>
-        <section class="modal-card-body">
-          <p>Lorem ipsum dolor sit amet <b>adipiscing elit</b></p>
-          <p>This is sample modal</p>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button --jb-modal-close">Cancel</button>
-          <button class="button red --jb-modal-close">Confirm</button>
-        </footer>
-      </div>
-    </div>
-
-    <div id="sample-modal-2" class="modal">
-      <div class="modal-background --jb-modal-close"></div>
-      <div class="modal-card">
-        <header class="modal-card-head">
-          <p class="modal-card-title">Sample modal</p>
-        </header>
-        <section class="modal-card-body">
-          <p>Lorem ipsum dolor sit amet <b>adipiscing elit</b></p>
-          <p>This is sample modal</p>
-        </section>
-        <footer class="modal-card-foot">
-          <button class="button --jb-modal-close">Cancel</button>
-          <button class="button blue --jb-modal-close">Confirm</button>
-        </footer>
-      </div>
-    </div>
 
   </div>
 
@@ -631,25 +551,6 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
   <script type="text/javascript" src="js/chart.sample.min.js"></script>
-
-
-  <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return; n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
-      n.queue = []; t = b.createElement(e); t.async = !0;
-      t.src = v; s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '658339141622648');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-      src="https://www.facebook.com/tr?id=658339141622648&ev=PageView&noscript=1" /></noscript>
 
   <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
