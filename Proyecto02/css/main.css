@@ -1570,4 +1570,6 @@ footer {
   gap: 1rem;
 }
 
-
+#card{
+  visibility: hidden;
+}

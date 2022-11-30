@@ -28,7 +28,7 @@ const mostrarPersonajes = (array) => {
     document.getElementById("container_characters").innerHTML = "";
     array.forEach((personaje) => {
         document.getElementById("container_characters").innerHTML += `
-            <div id="card" class="card">
+            <div id="card" class="card bigEntrance">
                 <img src="${personaje['image']}" class="card-img-top" alt="...">
                 <div id="card-body" class="card-body">
                     <h5 class="card-title">${personaje.name}</h5>
