@@ -45,6 +45,7 @@ const filtrarPersonajes =  () => {
                 character.querySelector("#card-body > h5").textContent.toLowerCase().includes(e.target.value)
                 ? character.classList.remove("filter")
                 : character.classList.add("filter");
+
             })
 
         }

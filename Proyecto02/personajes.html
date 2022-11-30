@@ -187,14 +187,42 @@
         </form>
       </div>
       <div id="container_characters"
-        class="container grid grid-cols-3 justify-center gap-1 mx-auto md:grid-cols-2 sm:grid-cols-1"></div>
+        class="container grid grid-cols-3 justify-center gap-1 mx-auto md:grid-cols-2 sm:grid-cols-1">
+      </div>
+      <div class="navigation">
+        <button type="button" class="button light" onclick="prev()">«</button>
+        <div class="numbers"></div>
+        <button type="button" class="button light" onclick="next()">»</button>
+      </div>    
+      <div class="card mb-6">
+        <header class="card-header">
+          <p class="card-header-title">
+            <span class="icon"><i class="mdi mdi-chart-arc"></i></span>
+            Estado de Personajes
+          </p>
+        </header>
+        <div class="card-content">
+          <div class="chart-area">
+            <div class="h-46">
+              <div class="chartjs-size-monitor">
+                <div class="chartjs-size-monitor-expand">
+                  <div></div>
+                </div>
+                <div class="chartjs-size-monitor-shrink">
+                  <div></div>                  </div>
+                </div>
+                <canvas id="barChart" class="chartjs-render-monitor block h-96"></canvas>
+              </div>
+            </div>
+          </div>
+      </div>    
     </section>
  
-    <div class="navigation">
+    <!--div class="navigation">
       <button type="button" class="button light" onclick="prev()">«</button>
       <div class="numbers"></div>
       <button type="button" class="button light" onclick="next()">»</button>
-    </div>     
+    </div-->     
 
     <footer class="footer">
       <div class="flex flex-col md:flex-row items-center justify-between space-y-3 md:space-y-0">
@@ -217,6 +245,8 @@
   <!-- Scripts -->
   <script type="text/javascript" src="js/main.min.js?v=1628755089081"></script>
   <script src="js/personajes.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/charts.js"></script>
   <!-- Icons below are for demo only. Feel free to use any icon pack. Docs: https://bulma.io/documentation/elements/icon/ -->
   <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.9.95/css/materialdesignicons.min.css">
 

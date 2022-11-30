@@ -1565,7 +1565,7 @@ footer {
 .navigation {
   display: flex;
   align-items: center;
-  margin-top: 2%;
+  margin: 2%;
   justify-content: center;
   gap: 1rem;
 }
